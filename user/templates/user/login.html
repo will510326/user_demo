@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content%}
+<div class="columns is-centered has-text-centered">
+    <div class="column is-size-1">登入</div>
+</div>
+<div class="columns is-centered">
+    <div class="column is-4">
+        <form action="" method="POST" class="box has-text-centered">
+            {% csrf_token %}
+            <div class="field">
+                <label for="username" class="label">帳號</label>
+                <div class="control">
+                    <input class="input has-text-centered" type="text" name="username" id="username"
+                        placeholder="Text input">
+                </div>
+            </div>
+            <div class="field">
+                <label for="password" class="label">密碼</label>
+                <div class="control">
+                    <input class="input has-text-centered" type="password" name="password" id="password"
+                        placeholder="Text input">
+                </div>
+            </div>
+            <div class="field is-grouped is-grouped-centered">
+                <p class="control">
+                    <input class="button is-primary" type="submit" name="login" value="登入">
+                </p>
+                <p class="control">
+                    <input class="button is-warning" type="submit" name="register" value="註冊">
+                </p>
+                <p class="control">
+                    <input class="button is-danger" type="reset" name="reset" value="清除">
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
