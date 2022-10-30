@@ -90,11 +90,7 @@ small {
     width: calc((1235 / 1600) * 100%);
 }
 
-.op .v {
-    transition: all 10s cubic-bezier(0.73 0.02 0.29 1) 0s !important;
-}
-
-.main .v{
+.main .view{
     background: url(/static/images/picture01.jpg) no-repeat center center;
     background-size: cover;
     display: block;
