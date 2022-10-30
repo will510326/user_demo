@@ -1,5 +1,108 @@
-#main img{
-    width: 100%;
+body,
+html {
     height: 100%;
-    background-size:cover;
+}
+
+#wrapper {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    text-align: center;
+    /* transition: all 0.5s cubic-bezier(0.73, 0.02, 0.36, 0.99) 0s; */
+    width: calc((365 / 1600) * 100%);
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .btns {
+    transition: all .5s ease 0s;
+    transform: translate(-20%);
+}
+
+.menu a{
+    color: #00aaf5;
+    font-size: 18px;
+    letter-spacing: .1em;
+    line-height: 2.5em;
+    transition: all .5s ease 0s;
+}
+
+.anim-item .anim-fade {
+    backface-visibility: hidden;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: opacity 1s ease 0s, transform 3s cubic-bezier(0.19, 1, 0.22, 1) 0s, -webkit-transform 3s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+
+.anim-delay-1{
+    transition-delay:0.1s !important;
+}
+
+.anim-delay-2{
+    transition-delay:0.2s !important;
+}
+
+.anim-delay-3{
+    transition-delay:0.3s !important;
+}
+
+.footer{
+    padding-bottom: 20px;
+    position: absolute;
+    transition: all .5s ease 0s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.anim-item .anim-fade{
+    backface-visibility: hidden;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.share{
+    background: url(https://tenkinoko.com/assets/images/common/share.png) no-repeat 18px center;
+    display: block;
+    margin: 16px auto 5px;
+    padding-left: 45px;
+    width: 177px;
+}
+
+.share li{
+    display: inline-block;
+    padding-left: 16px;
+    line-height: 0;
+}
+
+small {
+    font-size: 14px;
+}
+
+.main {
+    background: #1840a5;
+    position: relative;
+    width: calc((1235 / 1600) * 100%);
+}
+
+.op .v {
+    transition: all 10s cubic-bezier(0.73 0.02 0.29 1) 0s !important;
+}
+
+.main .v{
+    background: url(/static/images/picture01.jpg) no-repeat center center;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50%;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    backface-visibility: hidden;
 }

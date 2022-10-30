@@ -6,13 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 主要使用css -->
     <link rel="stylesheet" href="/static/css/index.css">
+    <!-- reset css -->
+    <link rel="stylesheet" href="/static/css/reset.css">
     <!-- <link rel="stylesheet" href="{% static 'css/index.css' %}"> -->
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div id="main">
-        <img src="/static/images/picture01.jpg" alt="">
+<body class="top op">
+    <div id="wrapper">
+        <div class="menu anim-item">
+            <div>
+                <ul class="btns">
+                    <li class="anim-fade anim-delay-1"><a href="#">個人</a></li>
+                    <li class="anim-fade anim-delay-2"><a href="#">作品</a></li>
+                    <li class="anim-fade anim-delay-3"><a href="#">介紹</a></li>
+                </ul>
+                <footer class="footer">
+                    <a href="" target="_blank" class="anim-fade anim-delay-6">
+                        <img src="https://tenkinoko.com/assets/images/common/nav-ot.png" alt="Twitter">
+                    </a>
+                    <ul class="share anim-fade anim-delay-7">
+                        <li><a href="#"><img src="https://tenkinoko.com/assets/images/common/share-fb.png" alt=""></a>
+                        </li>
+                        <li><a href="#"><img src="https://tenkinoko.com/assets/images/common/share-line.png" alt=""></a>
+                        </li>
+                        <li><a href="#"><img src="https://tenkinoko.com/assets/images/common/share-tw.png" alt=""></a>
+                        </li>
+                    </ul>
+                    <small><span style="font-size: 14px;">&copy;</span>2022 Wayne Test</small>
+                </footer>
+            </div>
+        </div>
+        <div class="main" id="top">
+            <div class="v op-item active"></div>
+        </div>
     </div>
 </body>
 
